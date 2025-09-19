@@ -233,6 +233,21 @@ src/
 
 ## Production Deployment
 
+### **Railway Deployment (Recommended)**
+
+Railway offers the simplest deployment experience with automatic PostgreSQL setup:
+
+1. **Quick Deploy**:
+   - Go to [railway.app](https://railway.app) and connect your GitHub repo
+   - Railway automatically detects your Node.js app and builds it
+   - Add a PostgreSQL service with one click
+   - Set your environment variables (see `railway.env.example`)
+   - Run `yarn railway:migrate` to set up the database
+
+2. **Detailed Instructions**: See `RAILWAY_DEPLOYMENT.md` for complete setup guide
+
+3. **Helper Script**: Run `./scripts/railway-deploy.sh` for guided deployment
+
 ### **Render.com Deployment with Aiven Database**
 
 1. **Set up Aiven PostgreSQL**:
